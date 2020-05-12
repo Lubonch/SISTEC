@@ -1,0 +1,38 @@
+create database escuela;
+use escuela;
+
+create table alumnos (
+    id int not null auto_increment,
+    nombre char(30) not null,
+    apellido char(30) not null,
+    sexo enum('mujer', 'hombre'),
+    dni int not null unique,
+    fecha_nacimiento date not null,
+    usuario varchar(30) not null unique,
+    password varchar(255) not null,
+    email varchar(60) not null unique,
+    direccion char(50) not null,
+    altura int not null,
+    piso int,
+    cp int not null,
+    localidad char(50) not null,
+    provincia char(50) not null,
+    telefono int not null,
+    telefono_emergencia int not null,
+    cel int not null,
+
+    leer enum('si', 'no'),
+    nivel enum('ninguno', 'primario', 'secundario', 'terciario', 'universitario'),
+    final enum('si', 'no'),
+
+    cursos enum('si', 'no'),
+    como text not null,
+    discapacidad enum('si', 'no'),
+    tipo enum('ninguna','fisica', 'intelectual', 'sensorial'),
+    apoyo text,
+
+    fecha_registro datetime not null,
+    activo tinyint not null,
+    primary key (id)
+
+);

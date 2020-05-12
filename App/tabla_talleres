@@ -1,0 +1,11 @@
+
+create table talleres(
+    id_taller int not null auto_increment,
+    nombre_taller char(50) not null,
+    descripcion char(100) not null,
+    dia enum('lunes', 'martes', 'miercoles', 'jueves', 'viernes'),
+    horario enum('primer turno', 'segundo turno'),
+    certificado enum('si', 'no'),
+    primary key (id_taller)
+
+);
