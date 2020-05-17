@@ -1,7 +1,7 @@
 # SISTEC - TP Practica Profesional 2
 
 
-Equipo: Lucas Eduardo Ramirz Bonch, Ginobili Yasmin.
+Equipo: Lucas Eduardo Ramirez Bonch, Ginobili Yasmin.
 
 Sistema de inscripcion a Talleres de Educacion No Formal.
 
